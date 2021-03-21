@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>width: min(90%, 1000px);</p>
+    <p>width: clamp(500px, 50%, 800px);</p>
     <div ref="box" class="box">width: <span>{{targetWidth}}px</span></div>
   </div>
 </template>
@@ -37,7 +37,7 @@ export default {
   height: 200px;
   justify-content: center;
   margin: 0 auto;
-  width: min(90%, 1000px);
+  width: clamp(500px, 50%, 800px);
 }
 
 .box span {
